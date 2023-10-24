@@ -1,3 +1,4 @@
+#!/usr/bin/enc python3
 import sys
 import string
 import base64
