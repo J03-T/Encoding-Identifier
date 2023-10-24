@@ -1,5 +1,5 @@
 # Encoding Identifier
-This program identfies likely encodings which a text string represents. The tested-for encodings are:
+This program identifies likely encodings which a text string represents. The tested-for encodings are:
 
 - Binary
 - Hex
