@@ -67,7 +67,7 @@ def is_rot13(text: str):
     if any(map(lambda x: x not in string.printable, text)):
         return 0
     freqs = {l: text.count(l) for l in set(text) & set(string.ascii_letters)}
-    if max(freqs.keys(), key=lambda k: freqs[k]) not in ['r', 'R', 'n', 'N', 'e', 'E', 'v', 'V', 'b', 'B']:
+    if max(freqs.keys(), key=lambda k: freqs[k]) not in ['r', 'R', 'n', 'N', 'e', 'E', 'v', 'V', 'b', 'B', 'g', 'G']:
         return 0.5
     return 1
 
