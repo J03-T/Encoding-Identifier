@@ -49,7 +49,7 @@ def is_base32(text: str):
     return 1
 
 def is_binary(text: str):
-    if any(map(lambda x: x not in '01', text)):
+    if any(map(lambda x: x not in '01 ', text)):
         return 0
     return 1
 
@@ -135,6 +135,7 @@ def print_dependency_warnings():
         print("WARNING! The base58 module is not installed. Accuracy in identifying this format may be reduced. Please install it with 'pip install base58'!")
     if not B62SUPPORT:
         print("WARNING! The base62 module is not installed. Accuracy in identifying this format may be reduced. Please install it with 'pip install pybase62'!")
+        
 if __name__ == "__main__":
     print_dependency_warnings()
     if len(sys.argv) < 2:
